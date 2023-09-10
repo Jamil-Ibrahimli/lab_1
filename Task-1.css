@@ -1,0 +1,50 @@
+/*Man card style*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.card-man {
+  width: 200px;
+  height: 300px;
+  margin: 10px 0 0 30px;
+  display: inline-block;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 5px;
+}
+
+.image-man img {
+  max-width: 100%;
+  height: 203px;
+  display: inline-block;
+}
+
+.info-man {
+  padding: 5px;
+  font-family: sans-serif;
+  display: inline-block;
+}
+
+/*Woman card styke*/
+
+.card-woman {
+  width: 200px;
+  height: 300px;
+  margin: 10px 0 0 30px;
+  display: inline-block;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 5px;
+}
+
+.card-woman img {
+  max-width: 100%;
+  height: 203px;
+  display: inline-block;
+}
+
+.info-woman {
+  padding: 5px;
+  font-family: sans-serif;
+  display: inline-block;
+}
