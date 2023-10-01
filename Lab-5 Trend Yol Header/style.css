@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Commissioner:wght@500&family=Fira+Sans&family=Inclusive+Sans&family=Inter:wght@500&family=Manrope:wght@400;700&family=Mulish:wght@600&family=News+Cycle:wght@700&family=Outfit:wght@500&family=Playfair+Display:wght@500&family=Poppins:wght@300;400&family=Quicksand:wght@300&family=Staatliches&family=Work+Sans:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 120px;
+
+  border-bottom: 1px solid rgb(225, 222, 222);
+}
+
+.wrapper {
+  max-width: 100%;
+  height: 120px;
+  padding: 27px 70px;
+}
+
+.header_container {
+  width: 100%;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.logo h1 {
+  width: 155px;
+  height: 60px;
+  padding: px 0;
+  color: rgb(49, 47, 47);
+  font-family: "Manrope", sans-serif;
+  font-size: 38px;
+  font-weight: bolder;
+}
+
+div.search {
+  width: 590px;
+  height: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+div.search input {
+  width: 590px;
+  height: 42px;
+  padding: 5px 15px;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  border: none;
+}
+
+div.search button {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 12px;
+  border: none;
+  background-color: #f3f3f3;
+}
+
+div.search button .search_icon {
+  color: rgb(255, 149, 0);
+  font-size: 18px;
+}
+
+nav ul.navbar {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 300px;
+  height: 40px;
+  align-items: center;
+  font-size: 13px;
+  font-family: "Nunito", sans-serif;
+}
+
+ul.navbar li a {
+  text-decoration: none;
+  color: #333;
+}
+nav ul.navbar li .nav_icon {
+  font-size: 16px;
+}
+
+ul.navbar li.user a:hover {
+  color: orange;
+}
+ul.navbar li.favorit a:hover {
+  color: orange;
+}
+ul.navbar li.basket a:hover {
+  color: orange;
+}
