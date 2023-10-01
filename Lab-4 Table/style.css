@@ -1,0 +1,21 @@
+.content_table {
+  width: 100%;
+  border: 2px solid rgb(30, 29, 29);
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  font-family: sans-serif;
+  
+}
+.content_table td {
+  border: 1px solid rgb(26, 26, 26);
+}
+.content_table {
+  border-collapse: collapse;
+}
+
+.content_table tr:nth-child(even) {
+  background-color: aqua;
+  color: blueviolet;
+}
+
+.content_table tr:nth-child(odd){background-color:goldenrod ;}
