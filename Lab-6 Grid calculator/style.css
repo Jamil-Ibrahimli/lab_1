@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+div.grid_container {
+  width: 400px;
+  height: 480px;
+  border: 5px solid rgb(0, 4, 255);
+  margin: 70px;
+  padding: 30px 10px;
+  border-radius: 15px;
+}
+div.display {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(81, 236, 177);
+  margin-bottom: 30px;
+  border-radius: 15px;
+}
+
+div.buttons {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid_container .item {
+  border: none;
+  padding: 10px;
+  text-align: center;
+  background-color: cornflowerblue;
+  color: aliceblue;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.item25 {
+  grid-row: 5/7;
+  grid-column: 5;
+  padding: 5;
+}
+
+.item26 {
+  grid-column: 1/3;
+}
