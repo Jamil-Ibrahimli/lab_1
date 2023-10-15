@@ -1,0 +1,165 @@
+@import'./mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+html,
+body {
+    font-size: 16px;
+}
+
+// Rosponcive Started DeskTop
+
+header {
+    width: 100%;
+    height: 7rem;
+    background-color: #8F4FDF;
+    padding: 0 2rem;
+    font-family: sans-serif;
+    @include d-flex(flex, row, space-between, center, 1rem);
+
+    .header_left {
+        margin-right: 1rem;
+
+        &_logo {
+            .img1 {
+                width: 12rem;
+                height: 2.8rem;
+            }
+
+            ;
+
+            .img2 {
+                width: 12rem;
+                height: 2.8rem;
+                display: none
+            }
+
+            ;
+
+        }
+
+    }
+
+    .header_middle {
+        width: 100%;
+        margin-right: 1rem;
+
+        &_navbar ul {
+            @include d-flex(flex, row, end, center, 4rem);
+
+            a {
+                font-size: 1.2rem;
+                font-weight: bold;
+                color: white;
+
+            }
+
+        }
+
+    }
+
+    .header_right {
+        @include d-flex(flex, row, space-between, center, 3rem);
+
+        &_icon {
+            font-size: 1.5rem;
+            display: none;
+        }
+
+        &_buttons {
+            width: 15rem;
+            @include d-flex(flex, row, center, center, 2rem);
+
+            .signin {
+
+                padding: 0.7rem 1.5rem;
+                color: white;
+                background-color: #8F4FDF;
+                border: none;
+                font-weight: bold;
+
+                font-size: 1.2rem;
+            }
+
+            .signup {
+                padding: 0.7rem 1.5rem;
+                color: white;
+                background-color: #2150f9;
+                border: none;
+                font-weight: bold;
+                border-radius: 3px;
+                font-size: 1.2rem;
+            }
+
+        }
+
+
+    }
+
+
+    // Responcive Start Big Tablet
+
+}
+
+@media screen and (max-width:992px) {
+
+    html,
+    body {
+        font-size: 10px;
+    }
+
+    header {
+        background-color: aliceblue;
+
+        .header_middle {
+            display: none;
+        }
+
+        .header_right {
+            &_buttons {
+                display: none;
+            }
+
+            &_icon {
+                display: block;
+            }
+        }
+
+        .header_left {
+            margin-right: 1rem;
+
+            &_logo {
+                .img1 {
+                    display: none;
+
+                }
+
+                ;
+
+                .img2 {
+
+                    display: block
+                }
+
+                ;
+
+            }
+
+        }
+
+    }
+
+}
+// Responcive Finished
