@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("image/sunny.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.active {
+  background-image: url("image/rain.jpg");
+}
+
+.section {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.section .weather {
+  width: 500px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.146);
+  border-radius: 20px;
+}
+.section .weather_container {
+  display: grid;
+  justify-content: center;
+  gap: 2rem;
+}
+.section .weather_container_heading {
+  text-align: center;
+}
+.section .weather_container_heading h2 {
+  font-size: 3rem;
+  color: rgb(84, 79, 79);
+}
+.section .weather_container_input {
+  text-align: center;
+  border-bottom: 3px solid rgb(77, 76, 76);
+}
+.section .weather_container_input_text {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
+}
+.section .weather_container_input_output_city {
+  text-align: center;
+  font-size: 2rem;
+}
+.section .weather_container_input_output_degree {
+  text-align: center;
+}
+.section .weather_container_input_output_info {
+  text-align: center;
+}
+img .section .weather_container_input_output_icon {
+  text-align: center;
+}/*# sourceMappingURL=main.css.map */

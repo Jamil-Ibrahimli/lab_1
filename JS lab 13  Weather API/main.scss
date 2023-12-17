@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url('image/sunny.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+}
+
+.active {
+    background-image: url('image/rain.jpg');
+}
+
+.section {
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    .weather {
+
+        width: 500px;
+        height: 300px;
+        background-color: rgba(0, 0, 0, 0.146);
+        border-radius: 20px;
+
+
+        &_container {
+            display: grid;
+            justify-content: center;
+            gap: 2rem;
+
+            &_heading {
+
+                text-align: center;
+
+                h2{font-size: 3rem;color: rgb(84, 79, 79);}
+
+            }
+
+            &_input {
+                text-align: center;
+                border-bottom: 3px solid rgb(77, 76, 76);
+                
+                
+
+
+                &_text {
+
+                    background-color: rgba(0, 0, 0, 0);
+                    border: none;
+                    outline: none;
+
+                }
+
+                &_output {
+
+                    &_city {
+                        text-align: center;
+                        font-size: 2rem;
+
+
+                    }
+
+                    &_degree {
+                        text-align: center;
+
+
+                    }
+
+                    &_info {
+                        text-align: center;
+                    }
+
+                    img &_icon {
+
+                        text-align: center;
+
+
+                    }
+
+
+
+                }
+
+            }
+        }
+
+    }
+
+
+}
