@@ -5,13 +5,14 @@
 }
 
 body {
-  background-image: url("image/sunny.jpg");
+  background-image: url("");
   background-size: cover;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
   font-family: sans-serif;
+  transition: 3s;
 }
 
 .section {
@@ -19,7 +20,7 @@ body {
 }
 .section .weather {
   position: fixed;
-  left: -25rem;
+  left: -30rem;
   width: 25rem;
   height: 96%;
   transition: 0.3s ease;
@@ -29,7 +30,7 @@ body {
   margin: 1rem 0;
 }
 .section .weather_container_input {
-  border-radius: 15px;
+  border-radius: 15px 15px 0 0;
   display: flex;
   background-color: rgba(5, 245, 153, 0.276);
   padding: 1rem;
@@ -56,20 +57,31 @@ body {
   justify-content: center;
   justify-items: center;
   align-items: center;
-  height: 20rem;
+  height: 25rem;
 }
-.section .weather_container_output_city {
-  text-align: center;
+.section .weather_container_output_name {
+  font-size: 3rem;
+  color: aliceblue;
+}
+.section .weather_container_output_country {
+  font-size: 2rem;
+  color: aliceblue;
 }
 .section .weather_container_output_degree {
-  text-align: center;
+  color: aliceblue;
+  font-size: 3rem;
 }
 .section .weather_container_output_info {
-  text-align: center;
+  color: aliceblue;
+  font-size: 1.5rem;
 }
 .section .weather_container_output_icon {
-  text-align: center;
-  width: 5rem;
+  font-size: 3rem;
+  font-weight: bold;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 20%;
+  background-color: rgba(254, 255, 255, 0.646);
 }
 .section .active {
   position: absolute;

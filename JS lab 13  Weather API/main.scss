@@ -6,37 +6,40 @@
 
 
 body {
-    background-image: url('image/sunny.jpg');
+    background-image: url('');
     background-size: cover;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
     font-family: sans-serif;
+    transition: 3s;
 
 }
 
 
 
 
-.section {border-radius: 15px;
- 
+.section {
+    border-radius: 15px;
+
 
 
     .weather {
         position: fixed;
-        left: -25rem;
+        left: -30rem;
         width: 25rem;
         height: 96%;
         transition: 0.3s ease;
         background-color: rgba(0, 0, 0, 0.647);
         box-shadow: rgb(19, 19, 19) 0px 50px 100px -10px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(234, 231, 194, 0.35) 0px -2px 6px 0px inset;
         border-radius: 15px;
-        margin: 1rem 0;        
+        margin: 1rem 0;
 
         &_container {
 
-            &_input {border-radius: 15px;
+            &_input {
+                border-radius: 15px 15px 0 0;
                 display: flex;
                 background-color: rgba(5, 245, 153, 0.276);
                 padding: 1rem;
@@ -71,34 +74,46 @@ body {
             &_output {
                 display: grid;
                 justify-content: center;
-
                 justify-items: center;
                 align-items: center;
-                height: 20rem;
+        
+                height: 25rem;
 
-                &_city {
-                    text-align: center;
+                &_name {
 
+                    font-size: 3rem;
+                    color: aliceblue;
 
-
+                
 
                 }
 
-                &_degree {
-                    text-align: center;
+                &_country {
+                    font-size: 2rem;
+                    color: aliceblue;
+                }
 
+                &_degree {
+
+                    color: aliceblue;
+                    font-size: 3rem;
 
                 }
 
                 &_info {
-                    text-align: center;
+
+                    color: aliceblue;
+                    font-size: 1.5rem;
                 }
 
                 &_icon {
 
-                    text-align: center;
-
-                    width: 5rem;
+                    font-size: 3rem;
+                    font-weight: bold;
+                    width: 4rem;
+                    height: 4rem;
+                    border-radius: 20%;
+                    background-color: rgba(254, 255, 255, 0.646);
 
                 }
 
