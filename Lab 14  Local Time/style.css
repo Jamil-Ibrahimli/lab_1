@@ -1,0 +1,51 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: black;
+}
+
+.apple-watch {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    width: 20rem;
+    height: 10rem;
+    display: grid;
+    place-content: center;
+
+
+}
+
+
+.apple-watch_container {
+
+    display: flex;
+    gap: 1rem;
+    border-bottom: 1px solid white;
+    padding: 0.5rem;
+
+}
+
+
+
+h2 {
+    color: white;
+    
+    margin-bottom: 1rem;
+}
+
+p {
+    color: white;
+    font-size: 2rem;
+  
+    
+}
