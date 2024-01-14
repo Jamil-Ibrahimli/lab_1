@@ -1,0 +1,19 @@
+.header{
+
+width: 100%;
+background-color: rgb(148, 127, 252);
+padding: 1rem;
+display: flex;
+justify-content: center;
+}
+
+.list{display: flex;
+
+justify-content: center;
+gap: 3rem;
+}
+
+li{
+    font-size: 1.3rem;
+    cursor: pointer;
+}

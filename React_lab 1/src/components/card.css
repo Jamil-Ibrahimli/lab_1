@@ -1,0 +1,12 @@
+.card{
+
+width:10rem;
+height: 10rem;
+border: 3px solid grey;
+border-radius: 10px;
+text-align: center;
+display: grid;
+align-items: center;
+padding: 1rem;
+}
+

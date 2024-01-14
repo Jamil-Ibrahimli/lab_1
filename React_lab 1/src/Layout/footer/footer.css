@@ -1,0 +1,13 @@
+.footer{
+    background-color: rgb(148, 127, 252);
+    padding: 2rem;
+height: 10rem;
+padding: 2rem;
+
+
+}
+.nav{
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem;
+}

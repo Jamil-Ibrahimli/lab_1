@@ -1,0 +1,10 @@
+.main{
+
+height: auto;
+background-color: rgb(213, 246, 246);
+display: flex;
+flex-wrap: wrap;
+gap: 1rem;
+padding: 2rem;
+
+}
