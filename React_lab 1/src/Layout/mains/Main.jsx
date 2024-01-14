@@ -64,7 +64,7 @@ color:'btn_second'},
   return (
     <div className="main">
   
-{arr.map((item)=><Card title={item.title} price={item.price} btnColor={item.color}/>)}
+{arr.map((item)=><Card title={item.title} price={item.price} btnColor={item.color} key={item.id}/>)}
     </div>
   )
 }
