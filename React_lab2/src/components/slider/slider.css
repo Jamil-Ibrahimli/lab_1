@@ -1,0 +1,48 @@
+.slider_container{
+
+width:30rem;
+height: 20rem;
+box-shadow: rgba(4, 36, 249, 0.4) 0px 30px 90px;
+position: relative;
+
+
+}
+
+.slider_image{
+
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+   
+}
+
+
+
+.slider_buttons{
+    position: absolute;
+    display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+     height: 100%;
+}
+
+.slider_next{
+
+right: 0;
+top: 50%;
+font-size: 3rem;
+
+
+}
+
+.slider_prev{
+
+    left: 0;
+    top: 50%;
+    font-size: 3rem;
+}
+
+
