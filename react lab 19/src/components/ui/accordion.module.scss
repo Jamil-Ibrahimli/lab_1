@@ -1,0 +1,52 @@
+.accordion-item {
+    width: 40rem;
+
+
+    &_title {
+        padding: 0.3rem 0.5rem;
+        background-color: #1B1B1B;
+        border-radius: 0 0 15px 15px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+
+        h2 {
+            color: white;
+        }
+
+        .title-icon {
+
+            color: white;
+            font-size: 1.5rem;
+            transition: 0.3s;
+            
+        }
+
+        .tit-icon-active {
+
+            transform: rotate(-180deg);
+
+        }
+    }
+
+
+    &_description {
+
+        padding: 0 0.5rem;
+        background-color: #343434;
+        height: 0;
+        transition: 0.3s;
+        overflow: hidden;
+
+        p {
+            color: white;
+        }
+    }
+
+    .description-active {
+        height: 5rem;
+        padding: 1rem 0.5rem;
+
+    }
+
+}
