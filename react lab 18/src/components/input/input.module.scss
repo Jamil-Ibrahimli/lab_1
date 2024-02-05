@@ -1,0 +1,33 @@
+.container {
+
+    display: flex;
+    justify-content: center;
+
+    &_input {
+        display: flex;
+        background-color: rgb(99, 100, 100);
+        width: min-content;
+height: 2rem;
+        border-radius: 5px;
+
+        &_item {
+
+            border: none;
+            padding: 0.2r cem;
+            outline: none;
+            cursor: pointer;
+            background-color: rgb(99, 100, 100);
+            color: aliceblue;
+            border-radius: 5px ;
+        }
+
+        .inp_icon {
+
+            padding: 0.5rem;
+
+        }
+
+    }
+
+
+}

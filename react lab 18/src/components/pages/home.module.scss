@@ -1,0 +1,15 @@
+.container{
+
+display: grid;
+gap: 3rem;
+padding: 3rem;
+
+&_title-box{
+
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 3rem;
+
+}
+}
