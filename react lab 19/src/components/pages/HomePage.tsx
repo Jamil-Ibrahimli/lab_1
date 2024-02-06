@@ -1,55 +1,50 @@
 
-import React from 'react'
-import Accordion from '../ui/Accordion'
-import styles from './homePage.module.scss'
-const HomePage = () => {
+import React, { useEffect, useState } from 'react';
+import Accordion from '../ui/Accordion';
+import styles from './homePage.module.scss';
 
-const datas=[
 
-    {
-      id:1,
-title:'Jamil',
-description:'Lorem ipsum dolor sit amet consectetur adipisicing elit.n\
-Lorem ipsum dolor sit amet consectetur adipisicing elit.n\
-Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+interface HomePageDataTypes{
 
-},
-{
-
-    id:2,
-title:'Uzeyir',
-description:'Lorem ipsum dolor sit amet consectetur adipisicing elit.n\
-Lorem ipsum dolor sit amet consectetur adipisicing elit.n\
-Lorem ipsum dolor sit amet consectetur adipisicing elit.'
-
-},
-{
-
-    id:3,
-title:'Ruslan',
-description:'Lorem ipsum dolor sit amet consectetur adipisicing elit.n\
-Lorem ipsum dolor sit amet consectetur adipisicing elit.n\
-Lorem ipsum dolor sit amet consectetur adipisicing elit.'
-
-},
-{
-
-    id:4,
-title:'Amil',
-description:'Lorem ipsum dolor sit amet consectetur adipisicing elit.n\
-Lorem ipsum dolor sit amet consectetur adipisicing elit.n\
-Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+id:number,
+title:string,
+description:string,
 
 }
 
-]
 
+
+const HomePage:React.FC<HomePageDataTypes> = () => {
+
+const[datas,setDatas]=useState<HomePageDataTypes[]>([])
+
+
+async function fetchingDatas(){
+
+const res=await fetch('https://api.sampleapis.com/coffee/hot');
+
+const json = await res.json()
+
+setDatas(json)
+
+}
+
+
+useEffect(()=>{
+
+fetchingDatas()
+
+},[])
+
+
+// "First, I was using static defined an array of objects.
+// later I decided to fetch data from an API to make the application more dynamic and challenging." 
 
 
   return (
 
 
-    <div className={styles.container}>{datas.map((item)=>
+    <div className={styles.container}>{datas.slice(0,7).map((item)=>
     <Accordion key={item.id} title={item.title} description={item.description}/>)}</div>
 
   )
