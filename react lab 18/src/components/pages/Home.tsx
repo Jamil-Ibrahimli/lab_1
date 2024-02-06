@@ -3,64 +3,87 @@ import Input from '../input/Input'
 import Card from '../card/Card'
 import styles from './home.module.scss'
 
-
-
-interface Ititle{
-
-title?:string,
-id?:number,
-
+interface HomeDataTypes{
+title:string,
+id:number,
+image:string
 
 }
 
 
- const Home: React.FC <Ititle> = () => {
+const Home:React.FC <HomeDataTypes>= () => {
 
-const[data,setData]=useState<Ititle[]>([])
+const[data,setData]=useState<HomeDataTypes[]>([])
 const[inp,setInp]=useState('')
 
+async function dataFetching(){
 
-
-const fetchData=async()=>{
 const res=await fetch('https://api.sampleapis.com/coffee/hot');
 const json=await res.json()
 
 setData(json)
 
 }
- 
+
 useEffect(()=>{
 
-fetchData()
+dataFetching()
 
-},[]);
+},[])
 
 
+const filtered=data?.filter((item)=>item.title.toLocaleLowerCase().includes(inp.toLocaleLowerCase().trim()))
 
-const filtered=data?.filter((item)=>item.title?.toLocaleLowerCase().includes(inp.toLocaleLowerCase().trim()))
 
-console.log(filtered)
 
   return (
     <>
- <div className={styles.container}>
+     <div className={styles.container}>
 
-      <Input setInp={setInp}/>
+     <Input setInp={setInp}/>
 
-     <div className={styles['container_title-box']}>
+    <div className={styles['container_title-box']}>
 
       
-  
-            {filtered?.map((item)=>  <div className={styles.container_title_card}><Card key={item.id} title={item.title}/></div>)}
+{filtered.map((item)=> <Card title={item.title} key={item.id} img={item.image} />)}
+
             
-         
+        
+    </div>
 
-     </div>
-
- </div>
-    
-    
+</div>
+      
     </>
   )
 }
+
 export default Home
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,15 +1,21 @@
-.container{
+.container {
 
-display: grid;
-gap: 3rem;
-padding: 3rem;
+    display: grid;
+    gap: 3rem;
+    padding: 3rem;
+    background-image: url('src/assets/images/nathan-dumlao-J2gEgTPM_OA-unsplash.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ 
 
-&_title-box{
+    &_title-box {
 
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-gap: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem;
 
-}
+    }
 }
