@@ -1,0 +1,16 @@
+.container{
+
+    position: relative;
+    height: 100vh;
+        
+    }
+    .card{
+    position: absolute;
+    width: 30rem;
+    height: 30rem;
+    border: 3px solid blue;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    
+    }

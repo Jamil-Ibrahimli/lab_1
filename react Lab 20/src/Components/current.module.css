@@ -1,0 +1,8 @@
+.current{
+height: 24rem;
+display: grid;
+justify-content: center;
+align-content: space-evenly;
+border: 1px solid;
+
+}

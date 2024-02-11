@@ -1,0 +1,23 @@
+.birth{
+
+width: 100%;
+padding: 0.5rem;
+border: 1px solid black;
+display: flex;
+justify-content:space-evenly;
+gap: 1rem;
+
+}
+
+.birth_info{
+
+border: 1px solid ;
+
+}
+
+.birth_info_inp{
+
+width: 3rem;
+height: 3rem;
+
+}
