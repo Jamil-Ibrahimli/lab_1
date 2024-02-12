@@ -20,6 +20,7 @@ const[days,setDays]=useState('')
 
 
 
+
 useEffect(()=>{
 
 
@@ -35,6 +36,32 @@ useEffect(()=>{
 
 
 function handleAge(){
+  const daysinMonth=new Date(currentYear,currentMonth,0).getDate()
+
+
+ const daysInBirthMonth=new Date(year,month,0).getDate()
+if(day==''||month==''||year==''){
+
+alert('this field is required')
+return
+}
+else if(isNaN(day)||isNaN(month)||isNaN(year)){
+
+  alert("Shoud be only numbers")
+  return
+}
+else if(day>daysInBirthMonth){
+
+alert('Anvalid days in this month')
+return
+
+}
+else if(year>currentYear||year==currentYear&&month===currentMonth&&day>currentDay){
+
+alert('birthday can not be in the future')
+return
+}
+
 
 
 setYears(currentYear-year)
@@ -50,10 +77,12 @@ setMonths(prev=>prev+12)
 
 if(currentDay<day){
 
-  const daysinMonth=new Date(currentYear,currentMonth,0).getDate()
+
 setDays(prev=>prev+daysinMonth)
 setMonths(prev=>prev-1)
 }
+
+
 
 }
 
