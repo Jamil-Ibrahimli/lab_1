@@ -1,0 +1,43 @@
+.card {
+
+    width: 13rem;
+    height: 15rem;
+    border: 1px solid rgb(221, 220, 220);
+    padding: 0.2rem;
+    display: grid;
+    justify-items: center;
+    border-radius: 10px;
+
+    &_title {
+
+        height: 5rem;
+
+        h3 {
+
+            font-size: 1rem;
+
+        }
+    }
+
+    &_image {
+
+        width: 5rem;
+        height: 5rem;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    button {
+
+        width: 100%;
+        background-color: aquamarine;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+    }
+}

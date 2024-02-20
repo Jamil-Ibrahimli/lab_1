@@ -1,0 +1,29 @@
+.cart {
+
+    background-color: rgba(0, 0, 0, 0.553);
+    border-radius: 5px;
+    padding: 1rem;
+    position: fixed;
+    right: -100%;
+    top: 2.5rem;
+    transition: 0.3s;
+    text-align: center;
+    h2{color: rgb(239, 236, 204);}
+
+    &_container {
+        border-radius: 5px;
+        height: min-content;
+        width: 30rem;
+        display: grid;
+        align-content: center;
+        row-gap: 0.3rem;
+    }
+
+}
+
+.cart-active{
+
+
+right: 1rem;
+
+}

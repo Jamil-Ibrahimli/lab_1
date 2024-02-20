@@ -1,0 +1,44 @@
+.header {
+    background-color: rgb(242, 108, 18);
+    padding: 0.3rem 3rem;
+
+    &_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &_nav {
+            width: 25rem;
+
+            &_list {
+                display: flex;
+                justify-content: space-evenly;
+
+                li {
+                    cursor: pointer;
+
+
+                }
+
+                li:focus {
+                    color: red;
+                    text-shadow: 1px 1px 1px green;
+
+                }
+            }
+
+        }
+
+        &_cart-icon {
+            font-size: 1.5rem;
+
+        }
+
+        &_cart-icon:hover {
+            color: red;
+            text-shadow: 1px 1px 1px green;
+            cursor: pointer;
+        }
+
+    }
+}
