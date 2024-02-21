@@ -1,6 +1,6 @@
 .cart {
 
-    background-color: rgba(0, 0, 0, 0.553);
+    background-color: rgba(0, 0, 0, 0.676);
     border-radius: 5px;
     padding: 1rem;
     position: fixed;
@@ -8,7 +8,12 @@
     top: 2.5rem;
     transition: 0.3s;
     text-align: center;
-    h2{color: rgb(239, 236, 204);}
+
+
+    h2 {
+        color: rgb(239, 236, 204);
+        font-size: 2.5rem;
+    }
 
     &_container {
         border-radius: 5px;
@@ -17,13 +22,26 @@
         display: grid;
         align-content: center;
         row-gap: 0.3rem;
+
+        &_total {
+            padding: 1rem;
+            border-top: 2px solid white;
+
+            h3 {
+
+                color: white;
+            }
+
+        }
     }
+
+
 
 }
 
-.cart-active{
+.cart-active {
 
 
-right: 1rem;
+    right: 1rem;
 
 }

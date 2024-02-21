@@ -5,11 +5,15 @@ import type { RootState } from '../../Store/Store';
 import Cart_item from '../Cart-Item/Cart_item';
 import classNames from 'classnames';
 
+
+
+
 const Cart = () => {
 
+    
     const cart = useSelector((state: RootState) => state.addToCartReducer.items)
     const isActive = useSelector((state: RootState) => state.isActiveSliceReducer.isActive)
-
+    const totalPrice = cart.reduce((total, item) => total + (item.count * item.price), 0)
     return (
 
         <>
@@ -24,8 +28,14 @@ const Cart = () => {
                     }
 
                     )}
+                    <div className={styles.cart_container_total}>
 
+                        <h3>Total Amount: $  {Math.round(totalPrice)}</h3> 
+                
+
+                    </div>
                 </div>
+
 
             </div>
 

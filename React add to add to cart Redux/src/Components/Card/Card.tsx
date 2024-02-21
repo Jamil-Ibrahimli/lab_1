@@ -9,7 +9,8 @@ export interface IProduct {
     id: number;
     title: string;
     image: string;
-
+    count: number;
+    price:number;
 
 }
 
@@ -19,7 +20,7 @@ interface CardDataTypes {
     title: string;
     image: string;
     item: IProduct;
-
+    price:number
 }
 
 

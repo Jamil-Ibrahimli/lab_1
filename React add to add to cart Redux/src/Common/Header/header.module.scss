@@ -1,6 +1,9 @@
 .header {
     background-color: rgb(242, 108, 18);
     padding: 0.3rem 3rem;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
 
     &_container {
         display: flex;
@@ -8,37 +11,65 @@
         align-items: center;
 
         &_nav {
-            width: 25rem;
 
             &_list {
+                width: 25rem;
                 display: flex;
                 justify-content: space-evenly;
 
                 li {
                     cursor: pointer;
 
+                    .link {
+                        color: rgb(255, 255, 255);
+                        font-weight: 600;
 
+                        &:hover {
+
+                            text-shadow: 2px 2px 2px rgb(53, 53, 53);
+                        }
+
+                        &:focus {
+                            color: rgb(0, 0, 0);
+                            text-shadow: 2px 2px 2px rgb(49, 49, 49);
+                        }
+                    }
                 }
 
-                li:focus {
-                    color: red;
-                    text-shadow: 1px 1px 1px green;
 
-                }
             }
 
         }
 
-        &_cart-icon {
-            font-size: 1.5rem;
+        &_cart-button {
+            width: 3.5rem;
+            border: none;
+            background-color: rgba(245, 222, 179, 0);
+            display: flex;
+            justify-content: space-between;
+
+
+            span {
+                color: white;
+                font-size: 1rem;
+                font-weight: 700;
+              
+            }
+
+            .icon {
+                font-size: 2rem;
+                
+                &:hover {
+                    color: rgb(222, 222, 222);
+              
+                    cursor: pointer;
+                    
+                }
+
+            }
 
         }
 
-        &_cart-icon:hover {
-            color: red;
-            text-shadow: 1px 1px 1px green;
-            cursor: pointer;
-        }
 
     }
 }

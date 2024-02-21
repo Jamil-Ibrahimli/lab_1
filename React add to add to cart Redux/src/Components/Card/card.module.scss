@@ -1,8 +1,8 @@
 .card {
 
     width: 13rem;
-    height: 15rem;
-    border: 1px solid rgb(221, 220, 220);
+    height: 17rem;
+    border: 2px solid rgba(184, 203, 209, 0.657);
     padding: 0.2rem;
     display: grid;
     justify-items: center;
@@ -28,16 +28,35 @@
             max-width: 100%;
             max-height: 100%;
             object-fit: cover;
+            transition: 0.7s;
+
         }
+
+
     }
+
+    &:hover img {
+
+        transform: rotateY(180deg) scale(1.5);
+
+
+    }
+
 
     button {
 
         width: 100%;
-        background-color: aquamarine;
+        background-color: rgba(210, 8, 237, 0.301);
         border: none;
         border-radius: 5px;
         cursor: pointer;
+        transition: 0.3s;
+
+    }
+
+    &:hover button {
+
+        background-color: rgb(165, 43, 226);
 
     }
 }

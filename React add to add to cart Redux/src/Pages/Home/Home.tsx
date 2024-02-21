@@ -6,7 +6,7 @@ import Cart from '../../Components/Cart/Cart'
 
 
 interface HomeDataTypes {
-    data: any[]
+    data?: any[]
 
 }
 
@@ -18,7 +18,7 @@ const Home: FC<HomeDataTypes> = ({ data }) => {
         <>
             <div className={styles.container}>
 
-                {data.map((item) =>
+                {data?.map((item) =>
                     <Card title={item.title}
 
                         key={item.id}
@@ -27,13 +27,19 @@ const Home: FC<HomeDataTypes> = ({ data }) => {
 
                         image={item.image}
 
-                        id={item.id} />
+                        id={item.id}
+
+                        price={item.price}
+
+                    />
+
+
                 )}
 
 
             </div>
 
-            <Cart/>
+            <Cart />
 
         </>
 
